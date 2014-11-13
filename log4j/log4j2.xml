@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="WARN">
+<Properties>
+<Property name="log-path">./logs/</Property>
+</Properties>
+  <appenders>
+    <Console name="Console" target="SYSTEM_OUT">
+     	<PatternLayout pattern="%d{HH:mm:ss} [%t] %-5p %logger{36}.%M - %msg%n"/>
+    </Console>
+    <RollingFile name="RollingFile" fileName="${log-path}/reports.log" filePattern="${log-path}/reports-%d{yyyy-MM-dd}-%i.log" >
+		<PatternLayout>
+			<pattern>%d{HH:mm:ss} [%t] %-5p %logger{36}.%M - %msg%n</pattern>
+		</PatternLayout>
+	<Policies>
+	<SizeBasedTriggeringPolicy size="10 KB" />
+	</Policies>
+	<DefaultRolloverStrategy max="1"/>
+	</RollingFile>     
+  </appenders>
+
+  <loggers>     
+    <root level="TRACE">
+      <appender-ref ref="Console" level="INFO"></appender-ref>
+       <appender-ref ref="RollingFile" level="TRACE"></appender-ref>
+    </root>    
+  </loggers>
+</configuration>

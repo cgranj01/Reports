@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="log4j"/>
+	<classpathentry kind="src" path="resources"/>
+	<classpathentry kind="lib" path="D:/jar/commons-io-2.4/commons-io-2.4.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/D:/jar/commons-io-2.4/docs/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk_x64"/>
+	<classpathentry kind="lib" path="D:/jar/javax.mail.jar"/>
+	<classpathentry kind="lib" path="D:/jar/pdfbox-app-1.8.7.jar"/>
+	<classpathentry kind="lib" path="D:/jar/commons-configuration-1.10/commons-configuration-1.10.jar"/>
+	<classpathentry kind="lib" path="D:/jar/commons-beanutils-1.9.2/commons-beanutils-1.9.2.jar"/>
+	<classpathentry kind="lib" path="D:/jar/commons-lang-2.6/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="D:/jar/poi-3.10.1/poi-3.10.1-20140818.jar"/>
+	<classpathentry kind="lib" path="D:/jar/apache-log4j-2.1-bin/log4j-core-2.1.jar"/>
+	<classpathentry kind="lib" path="D:/jar/apache-log4j-2.1-bin/log4j-api-2.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
